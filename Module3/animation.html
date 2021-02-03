@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        
+        <!--Animation Script-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                function rgt() {
+                    $(`#sldr`).animate({ left: "1200" }, 900, hider);
+                }
+                rgt();
+                function hider() {
+                    $(`#sldr`).css('left', '0px');
+                    //rgt();
+                }
+            });
+        </script>
+        
+    </head>
+    <body>
+        <p>We have a match for the Bison</p>
+        <form id="form1" runat="server">
+            <div>
+                <img id="sldr" src="Shooting.gif" style="position: absolute" />
+            </div>
+        </form>
+    </body>
+</html>

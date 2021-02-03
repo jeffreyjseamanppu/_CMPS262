@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Lab2</title>
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <script src="jquery-3.1.1.min.js"></script>
+
+        <h1>Welcome to Module 3</h1>
+        
+        <!--Enlarged Ids for CSS-->
+        <p class="enlargeable">The Bucs are going to win the Super Bowl</p>
+        <p class="enlargeable">#2020WasTerrible</p>
+        
+        <!--Buttons-->
+        <button id="enlarge">ENLARGE</button>
+        <button id="reduce">reduce</button>
+
+        <!--Script to perform the actions-->
+        <script>
+            //Increases the object by clicking on the button
+            $("button#enlarge").on("click", function(){
+                $("p.enlargeable").addClass("big");
+            });
+
+            //Decreases the object by clicking on the button
+            $("button#reduce").on("click", function(){
+                $("p.enlargeable").removeClass("big");
+            });
+
+        </script>
+
+        
+    </head>
+    <body>
+  
+      
+    </body>
+</html> 
